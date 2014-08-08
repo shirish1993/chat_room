@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Campus Hangout</title>
+  </head>
+  <body onload="get_nicks()">
+	<img id='image1' src='/images/bg_image.jpg' />
+    <div id="messages">
+	
+	</div>
+    <form id="form1" action="">
+      <input type='text' maxlength="200" placeholder="Enter message" id="m" spellcheck="false" autocomplete="off" /><button id='send1'></button>
+	  <input type="file" accept="image/*" id="file1" />
+	  <input type="button" id="file_btn" onclick="upload_file()">
+    </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/jquery.js"></script>
+	<link type="text/css" href="/style.css" rel="stylesheet"></link>
+	
+    <script src="/script.js"></script>
+	
+	<div id="alert_outer">
+		<center><div id="alert_inner">
+			<div id="alert_top">Error</div>
+			<div id="alert_text"></div>
+			<input type="button" onclick="close_alert('alert_outer')" value="OK" id="ok_btn">
+		</div></center>
+	</div>
+	<div id="prompt_outer">
+		<center><div id="prompt_inner">
+			<div id="prompt_top">Enter a username</div>
+			<div id="prompt_text"></div>
+			<input type="text" autocomplete="off" spellcheck="false" id="nick_box">
+			<input type="button" onclick="close_alert('prompt_outer')" value="OK" id="ok_btn">
+		</div></center>
+	</div>
+  </body>
+</html>

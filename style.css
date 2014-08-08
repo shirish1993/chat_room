@@ -1,0 +1,42 @@
+body{background-color:rgb(35,31,32);padding:0px;margin:0px;overflow:hidden;}
+
+input:focus{outline:none;}
+button:focus{outline:none;}
+
+#image1{position:fixed;top:0px;right:0px;z-index:-100;}
+#form1{position:fixed;bottom:0px;margin:0px;left:0px;background-color:rgb(237,237,237);width:100%;}
+#m{font-family:Georgia;padding:5px;font-size:16px;width:1250px;background-color:rgb(237,237,237);border:none;border-bottom:1px solid rgb(52,106,139);margin:6px;padding-bottom:2px;color:rgb(35,31,32);padding-top:5px;}
+
+#send1{display:none;background-image:url('/images/send.png');height:23px;background-repeat:no-repeat;border:none;width:21px;margin-bottom:1px;}
+#send1:hover{cursor:pointer;}
+
+#file1{display:none;}
+#file_btn{background-image:url('/images/upload.png');border:none;height:23px;width:20px;background-repeat:no-repeat;}
+#file_btn:hover{cursor:pointer;}
+
+.image1{border:0px solid rgb(200,200,200);margin:10px;box-shadow:1px 1px 5px 1px rgb(200,200,200);border-radius:0px 10px 10px 10px;}
+.image2{border:0px solid rgb(52,106,139);margin:10px;box-shadow:1px 1px 5px 1px rgb(152,206,239);border-radius:0px 10px 10px 10px;}
+
+#alert_outer{position:fixed;top:0px;left:0px;width:100%;height:100%;background:rgba(150,150,150,0.5);display:none;}
+#alert_inner{width:400px;background-color:white;border-radius:10px;margin-top:200px;}
+#alert_top{border-bottom:1px solid rgb(231,231,231);padding:5px;font-family:Georgia;color:rgb(31,31,31);font-size:20px;text-align:center;border-radius:10px 10px 0px 0px;}
+#alert_text{padding:5px;font-family:Georgia;color:rgb(131,131,131);font-size:16px;}
+#ok_btn{padding:3px;font-family:Georgia;color:rgb(31,31,31);font-size:14px;border:1px solid rgb(131,131,131);border-radius:5px;background:white;margin:10px;}
+#ok_btn:hover{cursor:pointer;}
+
+#prompt_outer{position:fixed;top:0px;left:0px;width:100%;height:100%;background:rgba(150,150,150,0.5);}
+#prompt_inner{width:400px;background-color:white;border-radius:10px;margin-top:200px;}
+#prompt_top{border-bottom:1px solid rgb(231,231,231);padding:5px;font-family:Georgia;color:rgb(31,31,31);font-size:20px;text-align:center;border-radius:10px 10px 0px 0px;}
+#prompt_text{padding:5px;font-family:Georgia;color:rgb(231,131,131);font-size:16px;}
+#nick_box{font-family:Georgia;padding:5px;font-size:16px;width:200px;background-color:white;border:none;border-bottom:1px solid rgb(52,106,139);margin:6px;padding-bottom:2px;color:rgb(35,31,32);padding-top:5px;}
+
+.nick_name{font-family:Georgia;color:rgb(230,230,230);font-size:14px;margin-left:10px;}
+.nick_name_text{font-family:Georgia;color:rgb(31,31,31);font-size:14px;}
+.text_msg{background:rgba(255,255,255,0.6);padding:7px;font-family:Georgia;margin:5px;font-size:16px;color:white;border-radius:0px 10px 10px 10px;min-width:300px;}
+.time{float:right;font-size:14px;}
+.time1{vertical-align:bottom;font-family:Georgia;font-size:16px;color:white;font-size:14px;margin-left:10px;}
+.nick_name_text1{font-family:Georgia;color:rgb(200,200,200);font-size:14px;}
+.text_msg1{background:rgba(52,106,139,0.6);padding:7px;font-family:Georgia;margin:5px;font-size:16px;color:white;border-radius:10px 0px 10px 10px;min-width:300px;}
+
+.line{border-top:1px solid rgb(200,200,200);width:auto;margin-top:3px;margin-bottom:4px;}
+#messages{overflow-y:auto;height:625px;}
